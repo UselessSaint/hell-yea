@@ -7,18 +7,11 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         if (instance != null) {
-            System.Console.WriteLine("Loading");
             Destroy(gameObject);
         } else {
             instance = this;
         }
 
         DontDestroyOnLoad(gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
