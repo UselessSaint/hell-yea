@@ -602,7 +602,7 @@ MonoBehaviour:
   ShowDebugText: 0
   ShowCameraFrustum: 1
   IgnoreTimeScale: 0
-  WorldUpOverride: {fileID: 0}
+  WorldUpOverride: {fileID: 1244025229}
   ChannelMask: -1
   UpdateMethod: 2
   BlendUpdateMethod: 1
