@@ -8,7 +8,8 @@ public class SkeletonCreature : BaseCreature
     private float maximumHealth = 100;
     [SerializeField]
     private float currentHealth;
-    // private LayerMask playerLayer;
+    [SerializeField]
+    private float gravity = 1.5f;
     private SpriteRenderer sr;
 
     void Awake() {
@@ -48,6 +49,6 @@ public class SkeletonCreature : BaseCreature
     }
 
     private void Gravity() {
-        rb.linearVelocityY = -1.5f;
+        rb.linearVelocityY = -gravity;
     }
 }
